@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FRED's Market Database</title>
+	<link rel="stylesheet" href="default.css"></link>
+	<meta charset = "UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+	<script src = "main.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+</head>
+
+
+<body>
+
+	<h1>Welcome to FRED's Market Database</h1>
+	<table>
+		<th></th>
+		<tr>
+			<td >
+				<div class = "checks"><input type="checkbox" id = "price_mov"/><label>Price Movement</label></div>
+				<div class = "checks"><input type="checkbox" id = "min"/><label>Min</label></div>
+				<div class = "checks"><input type="checkbox" id = "max"/><label>Max</label></div>
+				<div class = "checks"><input type="checkbox" id = "plot"/><label>Plot</label></div>
+				<div class = "checks"><input type="checkbox" id = "pred"/><label>Prediction</label></div>
+			</td>
+			<td>
+				<form><input type= "text" name = "tickers" placeholder="Ticker"></form>
+			</td>
+			<td class = "date_time_main">
+				<div class = "date_time">
+					<form action = "/action_page.php">
+					Start time: 
+					<input type = "date" name = "times_dates" class = "dates">
+					<input type = "text" name = "times_hours" placeholder="Hour">:
+					<input type = "text" name = "times_minutes" placeholder="Minute">:
+					<input type = "text" name = "times_seconds" placeholder="Second"> 
+					<input type = "submit">
+					</form>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
